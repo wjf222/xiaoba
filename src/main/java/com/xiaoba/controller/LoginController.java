@@ -21,12 +21,13 @@ public class LoginController {
 ////        map.put("password",password);
 //        return map;
 //    }
-    @PostMapping("/login")
+    @PostMapping("/loginin")
     @ResponseBody
     public Map<String, String> login(@RequestParam(name="userName") String name,
                                      @RequestParam(name="password") String password) {
         Map<String, String> map = new HashMap<>();
-        map.put("token", name);
+        map.put("tokens", name);
+        System.out.println("hello");
 //        map.put("password",password);
         return map;
     }
