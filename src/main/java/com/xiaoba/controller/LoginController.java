@@ -26,7 +26,7 @@ public class LoginController {
     public Map<String, String> login(@RequestParam(name="userName") String name,
                                      @RequestParam(name="password") String password) {
         Map<String, String> map = new HashMap<>();
-        map.put("tokens", name);
+        map.put("token", name);
         System.out.println("hello");
 //        map.put("password",password);
         return map;
